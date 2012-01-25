@@ -10,6 +10,7 @@ public class Sound {
 	public static Sound pause = loadSound("/sounds/pause4.wav");
 	public static Sound collapse = loadSound("/sounds/collapse4.wav");
 	public static Sound startGame = loadSound("/sounds/startgame.wav");
+	public static Sound menuMove = loadSound("/sounds/menu_move.wav");
 	
 	public static Sound loadSound(String fileName) {
 		Sound sound = new Sound();

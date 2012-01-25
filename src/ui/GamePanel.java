@@ -261,9 +261,11 @@ public class GamePanel extends JPanel implements Runnable
 
 					if (isPaused) {
 						mainMenu.handleMenuStateMovingUp();
+						Sound.menuMove.play(playSounds);
 					}
 					else if(gameOver) {
 						gameOverMenu.handleMenuStateMovingUp();
+						Sound.menuMove.play(playSounds);
 					}
 					break;
 				case KeyEvent.VK_DOWN:
@@ -273,9 +275,11 @@ public class GamePanel extends JPanel implements Runnable
 					}
 					else if (isPaused) {
 						mainMenu.handleMenuStateMovingDown();
+						Sound.menuMove.play(playSounds);
 					}
 					else if(gameOver) {
 						gameOverMenu.handleMenuStateMovingDown();
+						Sound.menuMove.play(playSounds);
 					}
 					break;
 				case KeyEvent.VK_LEFT:
